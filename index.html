@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | FAQ accordion</title>
+
+</head>
+<body>
+
+  <header></header>
+
+  <div class="faq-container">
+
+    <div class="faq-header">
+
+      <img src="./images/icon-star.svg" alt="SVG image">
+      <h1>FAQs</h1>
+
+    </div>
+
+    <div class="questions-container">
+
+      <div class="question-content">
+
+        <h3 class="question" id="question1" onclick="showAnswer(event, 'answer1')" >What is Frontend Mentor, and how will it help me?</h3>
+
+        <img class="plus" src="./images/icon-plus.svg" alt="SVG image" onclick="showAnswer(event, 'answer1')">
+        <img class="minus" src="./images/icon-minus.svg" alt="SVG image" onclick="showAnswer(event, 'answer1')">
+      
+        <p class="answer" id="answer1"></p>
+
+      </div>
+
+      <div class="question-content" onclick="showAnswer(event, 'answer2')">
+
+        <h3 class="question" id="question2">Is Frontend Mentor free?</h3>
+        <img class="plus" src="./images/icon-plus.svg" alt="SVG image" onclick="showAnswer(event, 'answer2')">
+        <img class="minus" src="./images/icon-minus.svg" alt="SVG image" onclick="showAnswer(event, 'answer2')">
+        
+        <p class="answer" id="answer2"></p>
+      
+      </div>
+
+      <div class="question-content" onclick="showAnswer(event, 'answer3')">
+        
+        <h3 class="question" id="question3">Can I use Frontend Mentor projects in my portfolio?</h3>
+        <img class="plus" src="./images/icon-plus.svg" alt="SVG image" onclick="showAnswer(event, 'answer3')">
+        <img class="minus" src="./images/icon-minus.svg" alt="SVG image" onclick="showAnswer(event, 'answer3')">
+        
+        <p class="answer" id="answer3"></p>
+      
+      </div>
+
+      <div class="question-content" onclick="showAnswer(event, 'answer4')">
+        
+        <h3 class="question" id="question4">How can I get help if I'm stuck on a Frontend Mentor challenge?</h3>
+        <img class="plus" src="./images/icon-plus.svg" alt="SVG image" onclick="showAnswer(event, 'answer4')">
+        <img class="minus" src="./images/icon-minus.svg" alt="SVG image" onclick="showAnswer(event, 'answer4')">
+        
+        <p class="answer" id="answer4"></p>
+      
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Samuel Euzébio</a>.
+  </footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
